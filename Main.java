@@ -1,12 +1,17 @@
 public class Main {
     public static void main(String[] args) {
-        int cashflowinKopecks = 1600_00;
-        int onebonus = 100_00;
-        int bonustotal = cashflowinKopecks / onebonus;
-        int limit = 1000_00;
-        if (cashflowinKopecks < limit) {
-            bonustotal = 0;
-        }
-        System.out.println(bonustotal);
+        int currentAccount = 300_00;
+        int cashFlowInKopecks = 1600_00;
+        int oneBonus = 100_00;
+        int limitForBonus = 1000_00;
+        int bonus;
+        if (cashFlowInKopecks < limitForBonus) {
+            bonus = 0;
+        } else {
+            bonus = cashFlowInKopecks / oneBonus;
+        } int currentAccountUpdated = currentAccount / 100  + cashFlowInKopecks / 100 + bonus;
+
+        System.out.println(bonus);
+        System.out.println(currentAccountUpdated);
     }
-}
+    }
